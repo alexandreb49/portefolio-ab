@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+/* Make sure the font variables are available globally */
+:root {
+  --font-inter: var(--font-inter);
+  --font-space-grotesk: var(--font-space-grotesk);
+}
+
+/* Ensure fonts are properly applied */
+.font-sans {
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Set Inter as the default body font */
+body {
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
